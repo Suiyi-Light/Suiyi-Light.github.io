@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>随意之光博客</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2020-12-25T12:28:28.686Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2020/12/25/hello-world/"/>
+    <id>http://example.com/2020/12/25/hello-world/</id>
+    <published>2020-12-25T12:28:28.686Z</published>
+    <updated>2020-12-25T12:28:28.686Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>添加了表情包</title>
+    <link href="http://example.com/2020/12/24/1846/"/>
+    <id>http://example.com/2020/12/24/1846/</id>
+    <published>2020-12-24T15:14:59.000Z</published>
+    <updated>2020-12-25T13:04:43.177Z</updated>
+    
+    <content type="html"><![CDATA[<p>2020.12.24 添加了mao表情包 由于图片太多，导致最后几个表情包无法加载，分为两组显示 2020.12.5 添加了2233表情包 见评论区</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;2020.12.24 添加了mao表情包 由于图片太多，导致最后几个表情包无法加载，分为两组显示 2020.12.5 添加了2233表情包 见评论区&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="uncategorized" scheme="http://example.com/categories/uncategorized/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>重启看板娘</title>
+    <link href="http://example.com/2020/12/20/%E9%87%8D%E5%90%AF%E7%9C%8B%E6%9D%BF%E5%A8%98/"/>
+    <id>http://example.com/2020/12/20/%E9%87%8D%E5%90%AF%E7%9C%8B%E6%9D%BF%E5%A8%98/</id>
+    <published>2020-12-20T11:24:14.000Z</published>
+    <updated>2020-12-25T13:04:43.153Z</updated>
+    
+    <content type="html"><![CDATA[<p>看板娘插件[ref]<a href="https://moedog.org/946.html">Live2D 看板娘来了！</a>[/ref] [github author=”xb2016” project=”poster-girl-l2d-2233” /] 之前因为更换主题，看板娘大部分功能失效 用了一下午的时间修改看板娘文件进行了适配，添加了一些提示，后续也将持续优化。 默认为圣诞服装 当前只支持电脑端显示。 部分移动端浏览器打开电脑模式后崩溃，详见<a href="https://blog.suiyil.cn/shuoshuo/%E9%83%A8%E5%88%86%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E8%AE%BF%E9%97%AE%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B4%A9%E6%BA%83%E8%AF%B4%E6%98%8E">部分移动设备访问浏览器崩溃说明</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;看板娘插件[ref]&lt;a href=&quot;https://moedog.org/946.html&quot;&gt;Live2D 看板娘来了！&lt;/a&gt;[/ref] [github author=”xb2016” project=”poster-girl-l2d-2233” /] 之前因为更换主</summary>
+      
+    
+    
+    
+    <category term="website-update" scheme="http://example.com/categories/website-update/"/>
+    
+    <category term="公告说明" scheme="http://example.com/categories/website-update/%E5%85%AC%E5%91%8A%E8%AF%B4%E6%98%8E/"/>
+    
+    
+    <category term="网站建设" scheme="http://example.com/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    
+    <category term="WordPress" scheme="http://example.com/tags/WordPress/"/>
+    
+    <category term="插件" scheme="http://example.com/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>调试live2d看板娘中</title>
+    <link href="http://example.com/2020/12/20/live2d-girl/"/>
+    <id>http://example.com/2020/12/20/live2d-girl/</id>
+    <published>2020-12-20T08:58:42.000Z</published>
+    <updated>2020-12-25T13:04:43.186Z</updated>
+    
+    <content type="html"><![CDATA[<p>调试live2d看板娘中 博客可能出现访问缓慢，显示异常等问题，敬请见谅</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;调试live2d看板娘中 博客可能出现访问缓慢，显示异常等问题，敬请见谅&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="uncategorized" scheme="http://example.com/categories/uncategorized/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>20岁生日</title>
+    <link href="http://example.com/2020/12/14/birthday-2020/"/>
+    <id>http://example.com/2020/12/14/birthday-2020/</id>
+    <published>2020-12-13T21:56:58.000Z</published>
+    <updated>2020-12-25T13:04:43.183Z</updated>
+    
+    <content type="html"><![CDATA[<p>不知道写点啥，就留个纪念吧</p><hr><p>[hermit autoplay=”false” mode=”circulation” preload=”auto”]netease_songlist#:5270588[/hermit]</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;不知道写点啥，就留个纪念吧&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;[hermit autoplay=”false” mode=”circulation” preload=”auto”]netease_songlist#:5270588[/hermit]&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="uncategorized" scheme="http://example.com/categories/uncategorized/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>12.13国家公祭日</title>
+    <link href="http://example.com/2020/12/13/1213/"/>
+    <id>http://example.com/2020/12/13/1213/</id>
+    <published>2020-12-12T16:00:09.000Z</published>
+    <updated>2020-12-25T13:04:43.180Z</updated>
+    
+    <content type="html"><![CDATA[<p>铭记历史，不忘过去 珍爱和平，开创未来</p><hr><p>document.getElementById(“spkj”).style.height=document.getElementById(“spkj”).scrollWidth*0.76+”px”; <a href="https://www.bilibili.com/video/av670603333">19371213-20201213 这是承载了八十三载悠悠岁月的国家纪念……（bilibili-青春山东）</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;铭记历史，不忘过去 珍爱和平，开创未来&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;document.getElementById(“spkj”).style.height=document.getElementById(“spkj”).scrollWidth*0.76+”px”; &lt;a hr</summary>
+      
+    
+    
+    
+    <category term="uncategorized" scheme="http://example.com/categories/uncategorized/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>今日大雪，更换背景图及主题色</title>
+    <link href="http://example.com/2020/12/07/%E4%BB%8A%E6%97%A5%E5%A4%A7%E9%9B%AA/"/>
+    <id>http://example.com/2020/12/07/%E4%BB%8A%E6%97%A5%E5%A4%A7%E9%9B%AA/</id>
+    <published>2020-12-07T05:55:41.000Z</published>
+    <updated>2020-12-25T13:04:43.147Z</updated>
+    
+    <content type="html"><![CDATA[<p>今日大雪 <img src="https://image.suiyil.cn/2020/12/16073206465237937173896469396063.png"> [collapse title=”新背景图”]<img src="https://image.suiyil.cn/2020/12/13-49-43-043.png">[/collapse] [collapse title=”新夜间背景图”]<img src="https://image.suiyil.cn/2020/12/8c6cf996-51ce-4854-a2a7-8579edc22328.png">[/collapse]</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;今日大雪 &lt;img src=&quot;https://image.suiyil.cn/2020/12/16073206465237937173896469396063.png&quot;&gt; [collapse title=”新背景图”]&lt;img src=&quot;https://image.suiy</summary>
+      
+    
+    
+    
+    <category term="website-update" scheme="http://example.com/categories/website-update/"/>
+    
+    <category term="公告说明" scheme="http://example.com/categories/website-update/%E5%85%AC%E5%91%8A%E8%AF%B4%E6%98%8E/"/>
+    
+    
+    <category term="大雪" scheme="http://example.com/tags/%E5%A4%A7%E9%9B%AA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>love live剧场版bilibili宣传～我们是合而为一的光芒～</title>
+    <link href="http://example.com/2020/11/30/1801/"/>
+    <id>http://example.com/2020/11/30/1801/</id>
+    <published>2020-11-30T05:35:57.000Z</published>
+    <updated>2020-12-25T13:04:43.143Z</updated>
+    
+    <content type="html"><![CDATA[<p>学园偶像们以演出角逐的大赛“LoveLive!”的上届优胜者μ’s，由于三年级的毕业而决定活动结束，然而在毕业典礼后，μ’s众人突然收到了一条消息，并由此展开了新的演唱会。 与从未见过的世界接触，一点一点成长着的九个人。她们作为学园偶像，出现了最后能做到的事情。在有限的时间里，μ’s所发现的最为愉悦的演唱会。</p><a id="more"></a><hr><p>[hermit autoplay=”false” mode=”random” preload=”auto”]tencent_playlist#:7801193558[/hermit]</p><hr><p>番剧链接（bilibili）:<a href="https://b23.tv/0dAG5b">https://b23.tv/0dAG5b</a></p><h1 id="11月1日动态宣传图"><a href="#11月1日动态宣传图" class="headerlink" title="11月1日动态宣传图"></a>11月1日动态宣传图</h1><p><img src="https://image.suiyil.cn/2020/11/1604160419081.jpg"> 来源：<a href="https://b23.tv/0SuNxf">哔哩哔哩番剧</a></p><h1 id="哔哩哔哩开屏宣传"><a href="#哔哩哔哩开屏宣传" class="headerlink" title="哔哩哔哩开屏宣传"></a>哔哩哔哩开屏宣传</h1><p>[video width=”540” height=”840” url=”<a href="https://image.suiyil.cn/2020/11/m201126a233gkxzj7ejtpw1dlyn1773m-1-SPLASH.mp4&quot;/]/[/video/]">https://image.suiyil.cn/2020/11/m201126a233gkxzj7ejtpw1dlyn1773m-1-SPLASH.mp4&quot;\]\[/video\]</a> 来源：<a href="https://b23.tv/nUYNQ4">客户端封面图收藏</a></p><h1 id="番剧区首页宣传图"><a href="#番剧区首页宣传图" class="headerlink" title="番剧区首页宣传图"></a>番剧区首页宣传图</h1><p><img src="https://image.suiyil.cn/2020/11/15-10-02-002.jpg"> <img src="https://image.suiyil.cn/2020/11/Taplus_2020-11-30-14-52-14-926_tv.danmaku.bili_.png"></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;学园偶像们以演出角逐的大赛“LoveLive!”的上届优胜者μ’s，由于三年级的毕业而决定活动结束，然而在毕业典礼后，μ’s众人突然收到了一条消息，并由此展开了新的演唱会。 与从未见过的世界接触，一点一点成长着的九个人。她们作为学园偶像，出现了最后能做到的事情。在有限的时间里，μ’s所发现的最为愉悦的演唱会。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="recommend" scheme="http://example.com/categories/recommend/"/>
+    
+    <category term="其他推荐" scheme="http://example.com/categories/recommend/%E5%85%B6%E4%BB%96%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="LoveLive!" scheme="http://example.com/tags/LoveLive/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>更换背景图及主题色</title>
+    <link href="http://example.com/2020/11/16/1785/"/>
+    <id>http://example.com/2020/11/16/1785/</id>
+    <published>2020-11-16T08:06:19.000Z</published>
+    <updated>2020-12-25T13:04:43.172Z</updated>
+    
+    <content type="html"><![CDATA[<p>金黄色的主题代表着秋天 然而立冬都一周多了… 就这样换了一个背景图 来自LoveLive!学园偶像祭背景图——イチョウ並木 [collapse title=”イチョウ並木”]<img src="https://image.suiyil.cn/2020/11/10-03-30-030.png">[/collapse]   [collapse title=”之前的图——音乃木坂学院·操场”]<img src="https://image.suiyil.cn/2020/02/background_075.png">[/collapse]</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;金黄色的主题代表着秋天 然而立冬都一周多了… 就这样换了一个背景图 来自LoveLive!学园偶像祭背景图——イチョウ並木 [collapse title=”イチョウ並木”]&lt;img src=&quot;https://image.suiyil.cn/2020/11/10-03-30</summary>
+      
+    
+    
+    
+    <category term="uncategorized" scheme="http://example.com/categories/uncategorized/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>状态监控</title>
+    <link href="http://example.com/2020/11/05/%E7%8A%B6%E6%80%81%E7%9B%91%E6%8E%A7-%E7%AB%99%E5%86%85/"/>
+    <id>http://example.com/2020/11/05/%E7%8A%B6%E6%80%81%E7%9B%91%E6%8E%A7-%E7%AB%99%E5%86%85/</id>
+    <published>2020-11-05T06:24:55.000Z</published>
+    <updated>2020-12-25T13:04:43.032Z</updated>
+    
+    
+    
+    
+    <category term="uncategorized" scheme="http://example.com/categories/uncategorized/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>状态监控</title>
+    <link href="http://example.com/2020/11/05/%E7%8A%B6%E6%80%81%E7%9B%91%E6%8E%A7/"/>
+    <id>http://example.com/2020/11/05/%E7%8A%B6%E6%80%81%E7%9B%91%E6%8E%A7/</id>
+    <published>2020-11-05T06:22:50.000Z</published>
+    <updated>2020-12-25T13:04:43.030Z</updated>
+    
+    
+    
+    
+    <category term="uncategorized" scheme="http://example.com/categories/uncategorized/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>推荐</title>
+    <link href="http://example.com/2020/10/22/%E6%8E%A8%E8%8D%90/"/>
+    <id>http://example.com/2020/10/22/%E6%8E%A8%E8%8D%90/</id>
+    <published>2020-10-22T10:24:17.000Z</published>
+    <updated>2020-12-25T13:04:43.028Z</updated>
+    
+    
+    
+    
+    <category term="uncategorized" scheme="http://example.com/categories/uncategorized/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>保护我的WordPress站点——All In One WP Security简单介绍</title>
+    <link href="http://example.com/2020/10/20/%E4%BF%9D%E6%8A%A4%E6%88%91%E7%9A%84wordpress%E7%AB%99%E7%82%B9-all-in-one-wp-security-%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D/"/>
+    <id>http://example.com/2020/10/20/%E4%BF%9D%E6%8A%A4%E6%88%91%E7%9A%84wordpress%E7%AB%99%E7%82%B9-all-in-one-wp-security-%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D/</id>
+    <published>2020-10-20T14:39:05.000Z</published>
+    <updated>2020-12-25T13:04:43.140Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>搭建完博客，账户安全也要引起重视。wordpress本身的账户安全功能几乎没有，甚至连个登录IP等无法记录，这时就需要一个插件来补充安全功能了。本文介绍的是All In One WP Security插件 本文参考：<a href="https://kanokano.cn/archives/420.html">https://kanokano.cn/archives/420.html</a>（XM的小窝）</p><a id="more"></a><p>插件：<a href="https://cn.wordpress.org/plugins/all-in-one-wp-security-and-firewall/">https://cn.wordpress.org/plugins/all-in-one-wp-security-and-firewall/</a></p><h1 id="使用之前"><a href="#使用之前" class="headerlink" title="使用之前"></a>使用之前</h1><p>第一次使用之前务必备份一下站点文件及数据库，最次也要把插件设置页提及文件备份 <img src="https://image.suiyil.cn/2020/10/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE-2020-10-20-221654.png"> 避免部分设置失误导致无法访问网站或者无法使用部分功能。</p><h1 id="用户登录"><a href="#用户登录" class="headerlink" title="用户登录"></a>用户登录</h1><p><img src="https://image.suiyil.cn/2020/10/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE-2020-10-20-115437.png"></p><ul><li>  <strong>允许解锁请求：</strong>当被锁定时可以通过已注册用户邮箱申请接受解锁链接</li><li>  <strong>最大登录尝试次数：</strong>超过尝试次数IP将被锁定</li><li>  <strong>登录重试时间段：</strong>在此时间内超过上述尝试次数，将会被锁定</li><li>  <strong>锁定的时间长度：</strong>被锁定时长</li><li>  <strong>即时锁定无效的用户名：</strong>尝试登录无效用户名时将立即锁定</li></ul><h1 id="暴力破解"><a href="#暴力破解" class="headerlink" title="暴力破解"></a>暴力破解</h1><p><img src="https://image.suiyil.cn/2020/10/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE-2020-10-20-223342.png"></p><ul><li>  可以添加Google reCAPTCHA验证码（注意需要修改插件才可在国内使用）</li><li>  可以重命名登录页</li></ul><p>这款插件功能还有很多，这里仅就我的博客常用的功能进行介绍。更多的功能欢迎自己下载使用</p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;搭建完博客，账户安全也要引起重视。wordpress本身的账户安全功能几乎没有，甚至连个登录IP等无法记录，这时就需要一个插件来补充安全功能了。本文介绍的是All In One WP Security插件 本文参考：&lt;a href=&quot;https://kanokano.cn/archives/420.html&quot;&gt;https://kanokano.cn/archives/420.html&lt;/a&gt;（XM的小窝）&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="recommend" scheme="http://example.com/categories/recommend/"/>
+    
+    <category term="工具推荐" scheme="http://example.com/categories/recommend/%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="WordPress" scheme="http://example.com/tags/WordPress/"/>
+    
+    <category term="插件" scheme="http://example.com/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>又拍云无线充电器开箱</title>
+    <link href="http://example.com/2020/10/15/%E5%8F%88%E6%8B%8D%E4%BA%91%E6%97%A0%E7%BA%BF%E5%85%85%E7%94%B5%E5%99%A8%E5%BC%80%E7%AE%B1/"/>
+    <id>http://example.com/2020/10/15/%E5%8F%88%E6%8B%8D%E4%BA%91%E6%97%A0%E7%BA%BF%E5%85%85%E7%94%B5%E5%99%A8%E5%BC%80%E7%AE%B1/</id>
+    <published>2020-10-15T05:22:31.000Z</published>
+    <updated>2020-12-25T13:04:43.137Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>又拍云9月份举办秋日礼遇季活动，活动形式挺简单的，就是签到三天抽奖一次，最低5元代金券。本来抱着抽几张代金券补贴补贴网站的cdn和云存储的费用。结果抽中了无线充电器，等了近半个月终于拿到了奖品。</p><a id="more"></a><p>[caption id=”attachment_1599” align=”alignnone” width=”890”]<img src="https://image.suiyil.cn/2020/10/13-37-24-024.png"> 图源网络，<a href="https://www.upyun.com/autumnActivities%E9%A1%B5%E9%9D%A2%E6%88%AA%E5%9B%BE%EF%BC%8C%E7%8E%B0%E5%B7%B2%E8%B7%B3%E8%BD%AC%E5%AE%98%E7%BD%91/[/caption/]">https://www.upyun.com/autumnActivities页面截图，现已跳转官网\[/caption\]</a> [caption id=”attachment_1590” align=”alignnone” width=”1080”]<img src="https://image.suiyil.cn/2020/10/IMG_20201015_123937.jpg"> 没有找到中奖截图，就发个发货截图吧[/caption]</p><h1 id="开箱"><a href="#开箱" class="headerlink" title="开箱"></a>开箱</h1><p>拆开快递袋映入眼帘的就是…泡沫纸。 <img src="https://image.suiyil.cn/2020/10/IMG_20201015_124924-scaled.jpg"> 这么多泡沫纸，这次赚大了(x 正经点，在泡沫纸中抽出充电器包装，看到小米logo。当时我还愣了一下，转念一想，又拍云又不是销售充电器的，肯定是市面充电器做的定制。表面还应该有一层塑料薄膜，应该是在定制时撕掉了。这也是缠上厚厚泡沫纸的原因吧。 <img src="https://image.suiyil.cn/2020/10/IMG_20201015_125015-scaled.jpg"> 打开包装，一个放入门指南，保修凭证的纸包。 <img src="https://image.suiyil.cn/2020/10/IMG_20201015_125130-scaled.jpg"> <img src="https://image.suiyil.cn/2020/10/IMG_20201015_125150-scaled.jpg"> 拿开这些，看到印有又拍云logo的小米无线充电器。</p><h1 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h1><p>使啥使，我压根没有支持无线充电的手机。     看到这篇文章并想要的，在评论区留言，截止2020年10月30日20点，在留言的各位中抽取一位送出，没人留言就算了。</p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;又拍云9月份举办秋日礼遇季活动，活动形式挺简单的，就是签到三天抽奖一次，最低5元代金券。本来抱着抽几张代金券补贴补贴网站的cdn和云存储的费用。结果抽中了无线充电器，等了近半个月终于拿到了奖品。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="日常" scheme="http://example.com/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+    <category term="中奖" scheme="http://example.com/tags/%E4%B8%AD%E5%A5%96/"/>
+    
+    <category term="又拍云" scheme="http://example.com/tags/%E5%8F%88%E6%8B%8D%E4%BA%91/"/>
+    
+    <category term="开箱" scheme="http://example.com/tags/%E5%BC%80%E7%AE%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WordPress插件更新失败？试试WP-China-Yes 插件一键加速升级！</title>
+    <link href="http://example.com/2020/10/10/wp-china-yes/"/>
+    <id>http://example.com/2020/10/10/wp-china-yes/</id>
+    <published>2020-10-10T15:17:39.000Z</published>
+    <updated>2020-12-25T13:04:43.132Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>相信在国内使用WordPress的站长在安装或更新时都遇见过安装失败的情况。需要一个可供使用的国内源，最近我发现了WP中国本土化社区（<a href="https://wp-china.org/">WP-China.org</a>）及其WP-China-Yes 插件</p><blockquote><p><strong>WP中国本土化社区（WP-China.org），立志于建设国内的WordPress生态基础设施以求内化WordPress，使之更契合中国人的使用习惯。</strong></p></blockquote><h1 id="插件功能介绍"><a href="#插件功能介绍" class="headerlink" title="插件功能介绍"></a>插件功能介绍</h1><p>v3.2.0特性</p><ol><li> 极致编码，安装包仅仅3KB大小，对服务器无任何负担</li><li> 为官方应用市场提供反代加速，解决应用安装/更新缓慢、失败等问题</li><li> 通过加速API调用和接管WordPress核心所依赖的静态文件来极大的加快站点后台访问速度</li><li> 对接本土翻译平台，自动从本土翻译平台接收应用市场中所有作品的全量汉化支持（技术试验）</li><li> 提供对Gravatar头像的加速支持</li><li> 提供对谷歌字体的加速支持</li><li> 提供对谷歌前端公共库的加速支持</li></ol><h1 id="插件下载"><a href="#插件下载" class="headerlink" title="插件下载"></a>插件下载</h1><p><a href="https://a1.wp-china-yes.net/apps/wp-china-yes.zip">WP中国本土化社区下载地址</a> GitHub [github size=”mini” author=”wp-china” project=”wp-china-yes” /] <a href="https://wp-china.org/"><strong>关于这个项目更多内容见WP中国本土化社区（WP-China.org）</strong></a> 最后感谢作者的这个项目</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;相信在国内使用WordPress的站长在安装或更新时都遇见过安装失败的情况。需要一个可供使用的国内源，最近我发现了WP中国本土化社区（&lt;a </summary>
+      
+    
+    
+    
+    <category term="recommend" scheme="http://example.com/categories/recommend/"/>
+    
+    <category term="工具推荐" scheme="http://example.com/categories/recommend/%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="WordPress" scheme="http://example.com/tags/WordPress/"/>
+    
+    <category term="插件" scheme="http://example.com/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>主页又又又换新了</title>
+    <link href="http://example.com/2020/09/27/%E4%B8%BB%E9%A1%B5%E5%8F%88%E5%8F%88%E5%8F%88%E6%8D%A2%E6%96%B0%E4%BA%86/"/>
+    <id>http://example.com/2020/09/27/%E4%B8%BB%E9%A1%B5%E5%8F%88%E5%8F%88%E5%8F%88%E6%8D%A2%E6%96%B0%E4%BA%86/</id>
+    <published>2020-09-27T07:27:31.000Z</published>
+    <updated>2020-12-25T13:04:43.130Z</updated>
+    
+    <content type="html"><![CDATA[<p>经过不知道多长时间，主页又又又换新了</p><a id="more"></a><hr><p>之前的那个主页是在一个个人模板网站下载的，在我一顿乱改下放上去的，有一说一，这个主页在不同的浏览器显示的细节不同。最近越看越难受。 挺喜欢Fly の 宅基地<a href="https://fly.moe/">(https://fly.moe/)</a>这个页面，几个月前作者把页面代码开源了，我就下载下来准备换上，然后就咕了。 [github author=”fly3949” project=”fly.moe” /] 今天在看服务器文件时突然看到这个文件夹，于是就稍作修改把之前的换掉了。 现在的主页<a href="https://www.suiyil.cn/">https://www.suiyil.cn</a> 老的主页也没删，放在old目录下留个纪念吧<a href="https://www.suiyil.cn/old/">https://www.suiyil.cn/old/</a> 好了今天的文章水完了，逃了(</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;经过不知道多长时间，主页又又又换新了&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="网站建设" scheme="http://example.com/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    
+    
+    <category term="网站建设" scheme="http://example.com/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    
+    <category term="主页" scheme="http://example.com/tags/%E4%B8%BB%E9%A1%B5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网易云音乐API</title>
+    <link href="http://example.com/2020/09/25/163-api/"/>
+    <id>http://example.com/2020/09/25/163-api/</id>
+    <published>2020-09-25T05:28:47.000Z</published>
+    <updated>2020-12-25T13:04:43.126Z</updated>
+    
+    <content type="html"><![CDATA[<p>网易云音乐[ref]网易云音乐是一款由网易开发的音乐产品 <a href="https://music.163.com/">https://music.163.com/</a>[/ref] <a href="https://api.suiyil.cn/163-api/">https://api.suiyil.cn/163-api/</a></p><a id="more"></a><hr><p>代码源自 [github author=”injahow” project=”meting-api” /]</p><h1 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h1><h3 id="type-类型"><a href="#type-类型" class="headerlink" title="type: 类型"></a>type: 类型</h3><p>name 歌曲名 artist 歌手 url 链接 cover 封面 lrc 歌词 single 获取以上所有信息(单曲) playlist 获取以上所有信息(歌单)</p><h3 id="id-网易云单曲ID或网易云歌单ID"><a href="#id-网易云单曲ID或网易云歌单ID" class="headerlink" title="id: 网易云单曲ID或网易云歌单ID"></a>id: 网易云单曲ID或网易云歌单ID</h3><h1 id="使用参考"><a href="#使用参考" class="headerlink" title="使用参考"></a>使用参考</h1><h2 id="链接使用"><a href="#链接使用" class="headerlink" title="链接使用"></a>链接使用</h2><p>歌曲url：<a href="https://api.suiyil.cn/163-api/?type=url&id=551339134">https://api.suiyil.cn/163-api/?type=url&amp;id=551339134</a> 封面cover：<a href="https://api.suiyil.cn/163-api/?type=cover&id=551339134">https://api.suiyil.cn/163-api/?type=cover&amp;id=551339134</a> 歌词lrc：<a href="https://api.suiyil.cn/163-api/?type=lrc&id=551339134">https://api.suiyil.cn/163-api/?type=lrc&amp;id=551339134</a> 歌词lrc（含翻译）：<a href="https://api.suiyil.cn/163-api/index_cn.php?type=lrc&id=551339134">https://api.suiyil.cn/163-api/index_cn.php?type=lrc&amp;id=551339134</a> 歌曲信息single：<a href="https://api.suiyil.cn/163-api/?type=single&id=551339134">https://api.suiyil.cn/163-api/?type=single&amp;id=551339134</a> 歌单信息playlist：<a href="https://api.suiyil.cn/163-api/?type=playlist&id=5225821464">https://api.suiyil.cn/163-api/?type=playlist&amp;id=5225821464</a></p><h2 id="配合APlayer-ref-🍭-Wow-such-a-beautiful-HTML5-music-player-ref-和MetingJS-ref-🍰-A-powerful-plugin-connect-APlayer-and-Meting-ref"><a href="#配合APlayer-ref-🍭-Wow-such-a-beautiful-HTML5-music-player-ref-和MetingJS-ref-🍰-A-powerful-plugin-connect-APlayer-and-Meting-ref" class="headerlink" title="配合APlayer[ref]🍭 Wow, such a beautiful HTML5 music player[/ref]和MetingJS[ref]🍰 A powerful plugin connect APlayer and Meting[/ref]"></a>配合APlayer[ref]🍭 Wow, such a beautiful HTML5 music player[/ref]和MetingJS[ref]🍰 A powerful plugin connect APlayer and Meting[/ref]</h2><p>[alert]经后期测试该API与MetingJS配合的不是很完美。API写法与MetingJS不一致，可能部分功能无法使用，请自行测试调整。[/alert] 仅展示本站使用的吸底模式代码，更多使用方法见下方链接。</p><link rel="stylesheet" href="https://api.suiyil.cn/aplayer/dist/APlayer.min.css"><script src="https://api.suiyil.cn/aplayer/dist/APlayer.min.js"></script><meting-jsfixed="true"server="netease"type="playlist"id="5225821464"order="random"preload="none"></meting-js><script>var meting\_api='https://api.suiyil.cn/163-api/?type=:type&id=:id';</script><script src="https://api.suiyil.cn/Meting/Meting.min.js"></script><hr><p>APlayer参数详见 <a href="https://aplayer.js.org/#/zh-Hans/">https://aplayer.js.org/#/zh-Hans/</a> MetingJS用法详见 [github author=”metowolf” project=”MetingJS” /] 有什么问题欢迎留言询问</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;网易云音乐[ref]网易云音乐是一款由网易开发的音乐产品 &lt;a href=&quot;https://music.163.com/&quot;&gt;https://music.163.com/&lt;/a&gt;[/ref] &lt;a href=&quot;https://api.suiyil.cn/163-api/&quot;&gt;https://api.suiyil.cn/163-api/&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="API" scheme="http://example.com/categories/API/"/>
+    
+    
+    <category term="API" scheme="http://example.com/tags/API/"/>
+    
+    <category term="网易云" scheme="http://example.com/tags/%E7%BD%91%E6%98%93%E4%BA%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>更多&gt;&gt;</title>
+    <link href="http://example.com/2020/09/23/%E6%9B%B4%E5%A4%9A/"/>
+    <id>http://example.com/2020/09/23/%E6%9B%B4%E5%A4%9A/</id>
+    <published>2020-09-23T03:59:50.000Z</published>
+    <updated>2020-12-25T13:04:42.977Z</updated>
+    
+    
+    
+    
+    <category term="uncategorized" scheme="http://example.com/categories/uncategorized/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>迎新</title>
+    <link href="http://example.com/2020/09/21/%E8%BF%8E%E6%96%B0/"/>
+    <id>http://example.com/2020/09/21/%E8%BF%8E%E6%96%B0/</id>
+    <published>2020-09-21T11:30:39.000Z</published>
+    <updated>2020-12-25T13:04:43.169Z</updated>
+    
+    <content type="html"><![CDATA[<p>迎新结束了，我也是学长了。 感叹又老了一岁</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;迎新结束了，我也是学长了。 感叹又老了一岁&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="uncategorized" scheme="http://example.com/categories/uncategorized/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>暴力破解？</title>
+    <link href="http://example.com/2020/09/10/1186/"/>
+    <id>http://example.com/2020/09/10/1186/</id>
+    <published>2020-09-10T08:24:45.000Z</published>
+    <updated>2020-12-25T13:04:43.167Z</updated>
+    
+    <content type="html"><![CDATA[<p>破就硬破，我倒看看今天能封多少ip</p><hr><p>锁定了50个IP，不玩了，修改登录地址，xmlrpc.php已禁止访问</p><hr><p>9.17更新 登录地址恢复，重新开启谷歌reCAPTCHA验证码</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;破就硬破，我倒看看今天能封多少ip&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;锁定了50个IP，不玩了，修改登录地址，xmlrpc.php已禁止访问&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;9.17更新 登录地址恢复，重新开启谷歌reCAPTCHA验证码&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="uncategorized" scheme="http://example.com/categories/uncategorized/"/>
+    
+    
+  </entry>
+  
+</feed>

@@ -6,7 +6,7 @@
   <link href="https://suiyil.top/atom.xml" rel="self"/>
   
   <link href="https://suiyil.top/"/>
-  <updated>2020-12-27T11:57:53.879Z</updated>
+  <updated>2021-09-11T12:40:38.999Z</updated>
   <id>https://suiyil.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>随意之光博客hexo关闭通知</title>
+    <link href="https://suiyil.top/close.html"/>
+    <id>https://suiyil.top/close.html</id>
+    <published>2021-09-11T12:21:48.000Z</published>
+    <updated>2021-09-11T12:40:38.999Z</updated>
+    
+    <content type="html"><![CDATA[<p>自2020-12-25 hexo建站以来，度过了九个月的时光。<br>在建站以来我几乎没有对这个网站进行使用，只学习了hexo在GitHub的快速使用<br>由于hexo的特点，不符合我的使用要求，我更适合使用WordPress，毕竟不太懂代码嘛<br>因为本站的域名于2021-09-24到期，现在域名除了本站没有任何其他用处。所以在其到期不在续费并关闭本站<br>请访问<a href="https://blog.suiyil.cn/" title="随意之光博客">随意之光博客</a><br>*可能会在<a href="https://suiyi-light.github.io/">https://suiyi-light.github.io</a> 留有残骸</p><p>2021.09.11<br>随意之光</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;自2020-12-25 hexo建站以来，度过了九个月的时光。&lt;br&gt;在建站以来我几乎没有对这个网站进行使用，只学习了hexo在GitHub的快速使用&lt;br&gt;由于hexo的特点，不符合我的使用要求，我更适合使用WordPress，毕竟不太懂代码嘛&lt;br&gt;因为本站的域名于20</summary>
+      
+    
+    
+    
+    <category term="网站建设" scheme="https://suiyil.top/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    
+    
+    <category term="网站建设" scheme="https://suiyil.top/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    
+    <category term="公告" scheme="https://suiyil.top/tags/%E5%85%AC%E5%91%8A/"/>
+    
+  </entry>
   
   <entry>
     <title>转换基本完成</title>
@@ -463,28 +489,6 @@
       
     <summary type="html">&lt;p&gt;随意之光博客一周年，继续前进&lt;/p&gt;
 </summary>
-      
-    
-    
-    
-    <category term="uncategorized" scheme="https://suiyil.top/categories/uncategorized/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>学习Markdown</title>
-    <link href="https://suiyil.top/1158.html"/>
-    <id>https://suiyil.top/1158.html</id>
-    <published>2020-09-04T10:08:58.000Z</published>
-    <updated>2020-12-25T13:04:43.162Z</updated>
-    
-    <content type="html"><![CDATA[<p>我还不会Markdown 搞了个Markdown在线编辑器，一边在使用一边学习 <a href="https://www.suiyil.cn/tool/editor.md/">Markdown在线编辑器</a> [github author=”pandao” project=”editor.md” /]</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;我还不会Markdown 搞了个Markdown在线编辑器，一边在使用一边学习 &lt;a href=&quot;https://www.suiyil.cn/tool/editor.md/&quot;&gt;Markdown在线编辑器&lt;/a&gt; [github author=”pandao” project</summary>
       
     
     

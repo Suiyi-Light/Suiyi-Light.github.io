@@ -1,18 +1,16 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>随意之光博客</title><meta name="author" content="随意之光"><meta name="copyright" content="随意之光"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta property="og:type" content="website">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>随意之光博客</title><meta name="author" content="随意之光"><meta name="copyright" content="随意之光"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
 <meta property="og:title" content="随意之光博客">
-<meta property="og:url" content="https://suiyil.top/page/3/index.html">
+<meta property="og:url" content="https://isuiyi.xyz/page/3/index.html">
 <meta property="og:site_name" content="随意之光博客">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://suiyil.top/null">
 <meta property="article:author" content="随意之光">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://suiyil.top/null"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://suiyil.top/page/3/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>var GLOBAL_CONFIG = { 
+<meta name="twitter:card" content="summary"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://isuiyi.xyz/page/3/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: undefined,
   translate: undefined,
   noticeOutdate: undefined,
-  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
   copy: {
     success: '复制成功',
     error: '复制错误',
@@ -47,55 +45,13 @@
   isPhotoFigcaption: false,
   islazyload: false,
   isanchor: false
-};
-
-var saveToLocal = {
-  set: function setWithExpiry(key, value, ttl) {
-    const now = new Date()
-    const expiryDay = ttl * 86400000
-    const item = {
-      value: value,
-      expiry: now.getTime() + expiryDay,
-    }
-    localStorage.setItem(key, JSON.stringify(item))
-  },
-
-  get: function getWithExpiry(key) {
-    const itemStr = localStorage.getItem(key)
-
-    if (!itemStr) {
-      return undefined
-    }
-    const item = JSON.parse(itemStr)
-    const now = new Date()
-
-    if (now.getTime() > item.expiry) {
-      localStorage.removeItem(key)
-      return undefined
-    }
-    return item.value
-  }
-}
-
-// https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
-const getScript = url => new Promise((resolve, reject) => {
-  const script = document.createElement('script')
-  script.src = url
-  script.async = true
-  script.onerror = reject
-  script.onload = script.onreadystatechange = function() {
-    const loadState = this.readyState
-    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-    script.onload = script.onreadystatechange = null
-    resolve()
-  }
-  document.head.appendChild(script)
-})</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '随意之光博客',
   isPost: false,
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2021-11-10 18:05:55'
+  postUpdate: '2021-11-14 12:13:46'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -108,89 +64,113 @@ const getScript = url => new Promise((resolve, reject) => {
   #post-meta time {
     display: inline !important
   }
-</style></noscript><script>(function () {  window.activateDarkMode = function () {
-    document.documentElement.setAttribute('data-theme', 'dark')
-    if (document.querySelector('meta[name="theme-color"]') !== null) {
-      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-    }
-  }
-  window.activateLightMode = function () {
-    document.documentElement.setAttribute('data-theme', 'light')
-   if (document.querySelector('meta[name="theme-color"]') !== null) {
-      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-    }
-  }
-  const autoChangeMode = 'false'
-  const t = saveToLocal.get('theme')
-  if (autoChangeMode === '1') {
-    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
-    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
-    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
-    if (t === undefined) {
-      if (isLightMode) activateLightMode()
-      else if (isDarkMode) activateDarkMode()
-      else if (isNotSpecified || hasNoSupport) {
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
         const now = new Date()
-        const hour = now.getHours()
-        const isNight = hour <= 6 || hour >= 18
-        isNight ? activateDarkMode() : activateLightMode()
-      }
-      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-        if (saveToLocal.get('theme') === undefined) {
-          e.matches ? activateDarkMode() : activateLightMode()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
         }
-      })
-    } else if (t === 'light') activateLightMode()
-    else activateDarkMode()
-  } else if (autoChangeMode === '2') {
-    const now = new Date()
-    const hour = now.getHours()
-    const isNight = hour <= 6 || hour >= 18
-    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
-    else if (t === 'light') activateLightMode()
-    else activateDarkMode()
-  } else {
-    if (t === 'dark') activateDarkMode()
-    else if (t === 'light') activateLightMode()
-  }const asideStatus = saveToLocal.get('aside-status')
-if (asideStatus !== undefined) {
-   if (asideStatus === 'hide') {
-     document.documentElement.classList.add('hide-aside')
-   } else {
-     document.documentElement.classList.remove('hide-aside')
-   }
-}})()</script><link href="https://blog.suiyil.cn/diy/main.css" rel="stylesheet"><meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="随意之光博客" type="application/atom+xml">
-</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/null" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">46</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">20</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">13</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(https://api.suiyil.cn/Watanabe-You/img.php)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">随意之光博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">随意之光博客</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/1158.html" title="学习Markdown">     <img class="post_bg" src="https://image.suiyil.cn/Watanabe-You/228UR-Watanabe-You-いったたた-Snow-Crystal-Cbg4w7.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="学习Markdown"></a></div><div class="recent-post-info"><a class="article-title" href="/1158.html" title="学习Markdown">学习Markdown</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-09-04T10:08:58.000Z" title="发表于 2020-09-04 18:08:58">2020-09-04</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/uncategorized/">uncategorized</a></span></div><div class="content">我还不会Markdown 搞了个Markdown在线编辑器，一边在使用一边学习 Markdown在线编辑器 [github author=”pandao” project=”editor.md” /]
-</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/1121.html" title="宝塔漏洞">     <img class="post_bg" src="https://image.suiyil.cn/Watanabe-You/133Watanabe-You-せっかく一緒に海に来たんだし-UR-ownKHO.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="宝塔漏洞"></a></div><div class="recent-post-info"><a class="article-title" href="/1121.html" title="宝塔漏洞">宝塔漏洞</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-24T09:55:40.000Z" title="发表于 2020-08-24 17:55:40">2020-08-24</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/uncategorized/">uncategorized</a></span></div><div class="content">宝塔的这个漏洞挺那啥的，通过目录直接访问数据库着实想不到 看到有被删库的，在此要感谢大佬的不删之恩 也长了教训。
-</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/1109.html" title="宝塔phpMyAdmin漏洞">     <img class="post_bg" src="https://image.suiyil.cn/Watanabe-You/35Watanabe-You-UR-MM3q3W.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="宝塔phpMyAdmin漏洞"></a></div><div class="recent-post-info"><a class="article-title" href="/1109.html" title="宝塔phpMyAdmin漏洞">宝塔phpMyAdmin漏洞</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-24T04:35:02.000Z" title="发表于 2020-08-24 12:35:02">2020-08-24</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/website-update/">website-update</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/website-update/%E5%85%AC%E5%91%8A%E8%AF%B4%E6%98%8E/">公告说明</a></span></div><div class="content">前言博客采用宝塔面板 受到漏洞影响
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    document.addEventListener('pjax:complete', detectApple)})(window)</script><link href="https://blog.suiyil.cn/diy/main.css" rel="stylesheet"><meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="随意之光博客" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/null" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">46</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">20</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">13</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://api.suiyil.cn/Watanabe-You/img.php')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">随意之光博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">随意之光博客</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/1158.html" title="学习Markdown">     <img class="post_bg" src="https://image.suiyil.cn/Watanabe-You/302UR-Watanabe-You-電車を走らせるよ-いけーー-おもちゃの世界へようこそ-ziJzvW.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="学习Markdown"></a></div><div class="recent-post-info"><a class="article-title" href="/1158.html" title="学习Markdown">学习Markdown</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-09-04T10:08:58.000Z" title="发表于 2020-09-04 18:08:58">2020-09-04</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/uncategorized/">uncategorized</a></span></div><div class="content">我还不会Markdown 搞了个Markdown在线编辑器，一边在使用一边学习 Markdown在线编辑器 [github author=”pandao” project=”editor.md” /]
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/1121.html" title="宝塔漏洞">     <img class="post_bg" src="https://image.suiyil.cn/Watanabe-You/153Watanabe-You-このアトラクション-面白ーい-UR-1SMb6A.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="宝塔漏洞"></a></div><div class="recent-post-info"><a class="article-title" href="/1121.html" title="宝塔漏洞">宝塔漏洞</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-24T09:55:40.000Z" title="发表于 2020-08-24 17:55:40">2020-08-24</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/uncategorized/">uncategorized</a></span></div><div class="content">宝塔的这个漏洞挺那啥的，通过目录直接访问数据库着实想不到 看到有被删库的，在此要感谢大佬的不删之恩 也长了教训。
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/1109.html" title="宝塔phpMyAdmin漏洞">     <img class="post_bg" src="https://image.suiyil.cn/Watanabe-You/153Watanabe-You-このアトラクション-面白ーい-UR-1SMb6A.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="宝塔phpMyAdmin漏洞"></a></div><div class="recent-post-info"><a class="article-title" href="/1109.html" title="宝塔phpMyAdmin漏洞">宝塔phpMyAdmin漏洞</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-24T04:35:02.000Z" title="发表于 2020-08-24 12:35:02">2020-08-24</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/website-update/">website-update</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/website-update/%E5%85%AC%E5%91%8A%E8%AF%B4%E6%98%8E/">公告说明</a></span></div><div class="content">前言博客采用宝塔面板 受到漏洞影响
 
 漏洞详情宝塔面板是一款使用方便、功能强大且终身免费的服务器管理软件,支持Linux与Windows系统。近日宝塔面馆官方发布安全更新，修复了一处高危漏洞。攻击者通过访问特定路径，可以直接访问到phpmyadmin数据库管理界面，并可借此获取服务器系统权限。阿里云应急响应中心提醒宝塔面板用户尽快采取安全措施阻止漏洞攻击。 ——来自阿里云安全中心
 解决方法1.升级宝塔面板 2.修改默认端口 3.关闭端口对外访问
 对本博客影响经过对网站日志分析，相应目录被访问50余次，涉及15个IP，大部分为检测扫描，其中有1IP进入数据库内部 根据访问地址分析未涉及相关隐私信息 由于本博客未开放账号系统，此漏洞对访客的隐私信息危害较小 在发现该问题后已关闭相关端口并且更新宝塔面板 由于当前无法判断数据库修改情况，博客已恢复至今早1点备份
-</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/1095.html" title="WP Super Cache">     <img class="post_bg" src="https://image.suiyil.cn/Watanabe-You/35Watanabe-You-UR-MM3q3W.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="WP Super Cache"></a></div><div class="recent-post-info"><a class="article-title" href="/1095.html" title="WP Super Cache">WP Super Cache</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-20T04:26:27.000Z" title="发表于 2020-08-20 12:26:27">2020-08-20</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/uncategorized/">uncategorized</a></span></div><div class="content">2020年9月18日找到导致访问速度较慢原因，WP Super Cache暂时关闭
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/1095.html" title="WP Super Cache">     <img class="post_bg" src="https://image.suiyil.cn/Watanabe-You/133Watanabe-You-せっかく一緒に海に来たんだし-UR-8wzOCl.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="WP Super Cache"></a></div><div class="recent-post-info"><a class="article-title" href="/1095.html" title="WP Super Cache">WP Super Cache</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-20T04:26:27.000Z" title="发表于 2020-08-20 12:26:27">2020-08-20</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/uncategorized/">uncategorized</a></span></div><div class="content">2020年9月18日找到导致访问速度较慢原因，WP Super Cache暂时关闭
 
 WP Super Cache 启用了wp super cache 插件 普通访客的访问速度加快了 已登录和留过言的访问部分页面速度还是很淦。 对所有访客启用了，有什么问题可以反馈
 
 放首歌 [hermit autoplay=”false” mode=”circulation” preload=”none”]netease_songlist#:1470427933[/hermit]
-</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/931.html" title="更换主题后日谈">     <img class="post_bg" src="https://image.suiyil.cn/Watanabe-You/302UR-Watanabe-You-電車を走らせるよ-いけーー-おもちゃの世界へようこそ-RfjYto.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="更换主题后日谈"></a></div><div class="recent-post-info"><a class="article-title" href="/931.html" title="更换主题后日谈">更换主题后日谈</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-07-30T04:42:11.000Z" title="发表于 2020-07-30 12:42:11">2020-07-30</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/uncategorized/">uncategorized</a></span></div><div class="content">更换主题后因各种原因关闭以下功能 1.右侧栏推荐网站（与友链功能有冲突） 2.看板娘（大部分功能不可用，部分情况下遮挡左侧栏） 3.第三方登录（登陆插件存在bug） 4.右侧栏友情链接（搬到左侧栏了） 5.暂时移除站长统计（无法解决pjax下准确统计问题）
-</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/926.html" title="Hello,World">     <img class="post_bg" src="https://image.suiyil.cn/Watanabe-You/133Watanabe-You-せっかく一緒に海に来たんだし-UR-ownKHO.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello,World"></a></div><div class="recent-post-info"><a class="article-title" href="/926.html" title="Hello,World">Hello,World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-07-30T04:10:22.000Z" title="发表于 2020-07-30 12:10:22">2020-07-30</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/uncategorized/">uncategorized</a></span></div><div class="content">说说上线了，这是第一条说说 这是主题自带的功能 之前部分文章会转换为说说
-</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/890.html" title="更换主题的日常">     <img class="post_bg" src="https://image.suiyil.cn/Watanabe-You/35Watanabe-You-UR-MM3q3W.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="更换主题的日常"></a></div><div class="recent-post-info"><a class="article-title" href="/890.html" title="更换主题的日常">更换主题的日常</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-07-30T01:14:13.000Z" title="发表于 2020-07-30 09:14:13">2020-07-30</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</a></span></div><div class="content">距离上次更换主题已经过去大约3个月了，我又开始换主题的日常了
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/931.html" title="更换主题后日谈">     <img class="post_bg" src="https://image.suiyil.cn/Watanabe-You/302UR-Watanabe-You-電車を走らせるよ-いけーー-おもちゃの世界へようこそ-RfjYto.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="更换主题后日谈"></a></div><div class="recent-post-info"><a class="article-title" href="/931.html" title="更换主题后日谈">更换主题后日谈</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-07-30T04:42:11.000Z" title="发表于 2020-07-30 12:42:11">2020-07-30</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/uncategorized/">uncategorized</a></span></div><div class="content">更换主题后因各种原因关闭以下功能 1.右侧栏推荐网站（与友链功能有冲突） 2.看板娘（大部分功能不可用，部分情况下遮挡左侧栏） 3.第三方登录（登陆插件存在bug） 4.右侧栏友情链接（搬到左侧栏了） 5.暂时移除站长统计（无法解决pjax下准确统计问题）
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/926.html" title="Hello,World">     <img class="post_bg" src="https://image.suiyil.cn/Watanabe-You/35Watanabe-You-UR-ESd3IW.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello,World"></a></div><div class="recent-post-info"><a class="article-title" href="/926.html" title="Hello,World">Hello,World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-07-30T04:10:22.000Z" title="发表于 2020-07-30 12:10:22">2020-07-30</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/uncategorized/">uncategorized</a></span></div><div class="content">说说上线了，这是第一条说说 这是主题自带的功能 之前部分文章会转换为说说
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/890.html" title="更换主题的日常">     <img class="post_bg" src="https://image.suiyil.cn/Watanabe-You/133Watanabe-You-せっかく一緒に海に来たんだし-UR-8wzOCl.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="更换主题的日常"></a></div><div class="recent-post-info"><a class="article-title" href="/890.html" title="更换主题的日常">更换主题的日常</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-07-30T01:14:13.000Z" title="发表于 2020-07-30 09:14:13">2020-07-30</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</a></span></div><div class="content">距离上次更换主题已经过去大约3个月了，我又开始换主题的日常了
 
 [progressbar progress=”100”]更新进度[/progressbar] 更换主题完成，可能存在一些不兼容的短代码显示在文章中，欢迎反馈 相关改动见更换主题后日谈 距离上次更换主题已经过去大约3个月了 换主题大作战 现在的主题有许多地方不太适合我，比如动态类型的文章，本身我只是个分享个人各种事情的博客，不是所有的想分享的都发成文章，这是我想换掉这个主题的一个原因 这次换主题期间博客可能会暂时关闭，显示异常，无法评论，短代码乱飞等奇葩现象，尽情见谅 [github author=”solstice23” project=”argon-theme” /] 之前的主题  [github author=”Vtrois” project=”Kratos” /]
-</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/874.html" title="上线状态监控页">     <img class="post_bg" src="https://image.suiyil.cn/Watanabe-You/302UR-Watanabe-You-電車を走らせるよ-いけーー-おもちゃの世界へようこそ-RfjYto.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="上线状态监控页"></a></div><div class="recent-post-info"><a class="article-title" href="/874.html" title="上线状态监控页">上线状态监控页</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-07-24T03:14:33.000Z" title="发表于 2020-07-24 11:14:33">2020-07-24</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</a></span></div><div class="content">[github author=”Suiyi-Light” project=”status-suiyi” /] 感谢筱锋(凌中的锋雨)的文章 https://www.xiaolfeng.cn/80.html 状态监控页地址：https://status.suiyil.cn/ https://suiyi-light.github.io/status-suiyi/（github pages）
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/874.html" title="上线状态监控页">     <img class="post_bg" src="https://image.suiyil.cn/Watanabe-You/153Watanabe-You-このアトラクション-面白ーい-UR-1SMb6A.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="上线状态监控页"></a></div><div class="recent-post-info"><a class="article-title" href="/874.html" title="上线状态监控页">上线状态监控页</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-07-24T03:14:33.000Z" title="发表于 2020-07-24 11:14:33">2020-07-24</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</a></span></div><div class="content">[github author=”Suiyi-Light” project=”status-suiyi” /] 感谢筱锋(凌中的锋雨)的文章 https://www.xiaolfeng.cn/80.html 状态监控页地址：https://status.suiyil.cn/ https://suiyi-light.github.io/status-suiyi/（github pages）
 
 简单介绍一下使用方法 1.在GitHub下载网页代码 2.前往UptimeRobot注册账号，填写监控网站信息 3.获取Monitor-Specific API Keys/Read-Only API Key 4.将API填入js/config.js 5.修改网页标题及页面信息 6.开始使用吧
 
 博客监控页面挂在又拍云云存储上，不会跟博客一起挂掉的  可以随时查看随意之光各服务的运行状态了
 
 本页涉及服务 页面 Cup [github size=”mini”  author=”CoolQ” project=”Cup” /] 数据源 UptimeRobot 又拍云云存储
-</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/863.html" title="我的动态">     <img class="post_bg" src="https://image.suiyil.cn/Watanabe-You/302UR-Watanabe-You-電車を走らせるよ-いけーー-おもちゃの世界へようこそ-ziJzvW.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我的动态"></a></div><div class="recent-post-info"><a class="article-title" href="/863.html" title="我的动态">我的动态</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-07-19T08:31:42.000Z" title="发表于 2020-07-19 16:31:42">2020-07-19</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/uncategorized/">uncategorized</a></span></div><div class="content">原我的动态集合页 2020.07.30 更换新主题，说说上线了，这篇文章完结了 2020.07.24 上线状态监控页 详情见 上线状态监控页 2020.07.19 对友情链接进行修改，把友情链接做成了表格。我还是想做自动的，但对前端一窍不通有点难顶。 （插件越加越多了） [accordion title=”友情链接”][table id=3 /][/accordion]
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/863.html" title="我的动态">     <img class="post_bg" src="https://image.suiyil.cn/Watanabe-You/302UR-Watanabe-You-電車を走らせるよ-いけーー-おもちゃの世界へようこそ-RfjYto.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我的动态"></a></div><div class="recent-post-info"><a class="article-title" href="/863.html" title="我的动态">我的动态</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-07-19T08:31:42.000Z" title="发表于 2020-07-19 16:31:42">2020-07-19</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/uncategorized/">uncategorized</a></span></div><div class="content">原我的动态集合页 2020.07.30 更换新主题，说说上线了，这篇文章完结了 2020.07.24 上线状态监控页 详情见 上线状态监控页 2020.07.19 对友情链接进行修改，把友情链接做成了表格。我还是想做自动的，但对前端一窍不通有点难顶。 （插件越加越多了） [accordion title=”友情链接”][table id=3 /][/accordion]
 
 2020.07.14 借着第三方登插件做了个前台登录，但由于插件打架，搞出许多奇奇怪怪的bug，所以没开启注册，也不知道我能不能修复这些问题把注册开了。 登录 （未开放注册）
 
 2020.07.12 突然想把CDN和对象储存搬到又拍云上，说办就办 做起来还行，把oss的图片全转到又拍云了，oss现在只做网站备份了 oss.blog.suiyil.cn转成了image.suiyil.cn/wp-content/uploads/ 随手申请了又拍云联盟（17号通过了） 2020.07.xx（忘了哪天了） 把评论区的验证码移到网站框下面，看起来好看了点。 把主题自带的表情又搞出来了
-</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/796.html" title="随意之光博客3月至6月更新">     <img class="post_bg" src="https://image.suiyil.cn/Watanabe-You/153Watanabe-You-このアトラクション-面白ーい-UR-G23WBa.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="随意之光博客3月至6月更新"></a></div><div class="recent-post-info"><a class="article-title" href="/796.html" title="随意之光博客3月至6月更新">随意之光博客3月至6月更新</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-06-19T23:37:07.000Z" title="发表于 2020-06-20 07:37:07">2020-06-20</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</a></span></div><div class="content">
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/796.html" title="随意之光博客3月至6月更新">     <img class="post_bg" src="https://image.suiyil.cn/Watanabe-You/153Watanabe-You-このアトラクション-面白ーい-UR-G23WBa.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="随意之光博客3月至6月更新"></a></div><div class="recent-post-info"><a class="article-title" href="/796.html" title="随意之光博客3月至6月更新">随意之光博客3月至6月更新</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-06-19T23:37:07.000Z" title="发表于 2020-06-20 07:37:07">2020-06-20</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</a></span></div><div class="content">
 一个月没发文章了，距离上次写更新也过去了3个月，在总结(水)一下这三个月的博客的改变吧
 
 1.更换主题 这三个月最大的改变当然是主题更换了 详情过程可以看看下面这个文章 换主题大作战 2.开启评论测试 开启评论测试 3.优化主题 这主题让我修改了好多 4.回复邮件提醒 如图所示    5.音乐插件 [hermit autoplay=”false” mode=”circulation” preload=”none”]tencent_songlist#:002cNtiG2bUMyv[/hermit] 音乐来自QQ音乐 来自https://blog.lwl12.com/read/hermit-x.html   大概也就这些了，又水了了篇文章   对此你有什么看法呢，欢迎在评论区告诉小编一起讨论哦！ :idea:
@@ -201,14 +181,18 @@ WP Super Cache 启用了wp super cache 插件 普通访客的访问速度加快�
   换主题大作战
   开启评论测试
 
-</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/2/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/4/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/null" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">随意之光</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">46</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">20</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">13</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/suiyi-light"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">本站已关闭，请访问<a target="_blank" rel="noopener" href="https://blog.suiyil.cn/">随意之光博客</a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/close.html" title="随意之光博客hexo关闭通知"><img src="https://image.suiyil.cn/Watanabe-You/228UR-Watanabe-You-いったたた-Snow-Crystal-Bf56X3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="随意之光博客hexo关闭通知"/></a><div class="content"><a class="title" href="/close.html" title="随意之光博客hexo关闭通知">随意之光博客hexo关闭通知</a><time datetime="2021-09-11T12:21:48.000Z" title="发表于 2021-09-11 20:21:48">2021-09-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/10000.html" title="转换基本完成"><img src="https://image.suiyil.cn/Watanabe-You/302UR-Watanabe-You-電車を走らせるよ-いけーー-おもちゃの世界へようこそ-ziJzvW.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="转换基本完成"/></a><div class="content"><a class="title" href="/10000.html" title="转换基本完成">转换基本完成</a><time datetime="2020-12-27T11:20:04.000Z" title="发表于 2020-12-27 19:20:04">2020-12-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/hello-hexo.html" title="Hello World"><img src="https://image.suiyil.cn/Watanabe-You/367UR-Watanabe-You-やったーーー-勝ちーーーー-サンタガールが街にやってくる-kkzTe3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/hello-hexo.html" title="Hello World">Hello World</a><time datetime="2020-12-25T12:28:28.686Z" title="发表于 2020-12-25 20:28:28">2020-12-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/1846.html" title="添加了表情包"><img src="https://image.suiyil.cn/Watanabe-You/35Watanabe-You-UR-ESd3IW.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="添加了表情包"/></a><div class="content"><a class="title" href="/1846.html" title="添加了表情包">添加了表情包</a><time datetime="2020-12-24T15:14:59.000Z" title="发表于 2020-12-24 23:14:59">2020-12-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/1884.html" title="重启看板娘"><img src="https://image.suiyil.cn/Watanabe-You/302UR-Watanabe-You-電車を走らせるよ-いけーー-おもちゃの世界へようこそ-ziJzvW.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="重启看板娘"/></a><div class="content"><a class="title" href="/1884.html" title="重启看板娘">重启看板娘</a><time datetime="2020-12-20T11:24:14.000Z" title="发表于 2020-12-20 19:24:14">2020-12-20</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list" id="aside-cat-list">
+</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/2/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/#content-inner">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/#content-inner">4</a><a class="page-number" href="/page/5/#content-inner">5</a><a class="extend next" rel="next" href="/page/4/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/null" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">随意之光</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">46</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">20</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">13</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/suiyi-light"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">本站已关闭，请访问<a target="_blank" rel="noopener" href="https://blog.suiyil.cn/">随意之光博客</a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/close.html" title="随意之光博客hexo关闭通知"><img src="https://image.suiyil.cn/Watanabe-You/153Watanabe-You-このアトラクション-面白ーい-UR-1SMb6A.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="随意之光博客hexo关闭通知"/></a><div class="content"><a class="title" href="/close.html" title="随意之光博客hexo关闭通知">随意之光博客hexo关闭通知</a><time datetime="2021-09-11T12:21:48.000Z" title="发表于 2021-09-11 20:21:48">2021-09-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/10000.html" title="转换基本完成"><img src="https://image.suiyil.cn/Watanabe-You/302UR-Watanabe-You-電車を走らせるよ-いけーー-おもちゃの世界へようこそ-ziJzvW.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="转换基本完成"/></a><div class="content"><a class="title" href="/10000.html" title="转换基本完成">转换基本完成</a><time datetime="2020-12-27T11:20:04.000Z" title="发表于 2020-12-27 19:20:04">2020-12-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/hello-hexo.html" title="Hello World"><img src="https://image.suiyil.cn/Watanabe-You/153Watanabe-You-このアトラクション-面白ーい-UR-1SMb6A.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/hello-hexo.html" title="Hello World">Hello World</a><time datetime="2020-12-25T12:28:28.686Z" title="发表于 2020-12-25 20:28:28">2020-12-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/1846.html" title="添加了表情包"><img src="https://image.suiyil.cn/Watanabe-You/35Watanabe-You-UR-ESd3IW.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="添加了表情包"/></a><div class="content"><a class="title" href="/1846.html" title="添加了表情包">添加了表情包</a><time datetime="2020-12-24T15:14:59.000Z" title="发表于 2020-12-24 23:14:59">2020-12-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/1884.html" title="重启看板娘"><img src="https://image.suiyil.cn/Watanabe-You/153Watanabe-You-このアトラクション-面白ーい-UR-G23WBa.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="重启看板娘"/></a><div class="content"><a class="title" href="/1884.html" title="重启看板娘">重启看板娘</a><time datetime="2020-12-20T11:24:14.000Z" title="发表于 2020-12-20 19:24:14">2020-12-20</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
             <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/API/"><span class="card-category-list-name">API</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/essays/"><span class="card-category-list-name">essays</span><span class="card-category-list-count">2</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/essays/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/"><span class="card-category-list-name">我的世界</span><span class="card-category-list-count">2</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/recommend/"><span class="card-category-list-name">recommend</span><span class="card-category-list-count">3</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/recommend/%E5%85%B6%E4%BB%96%E6%8E%A8%E8%8D%90/"><span class="card-category-list-name">其他推荐</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/recommend/%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/"><span class="card-category-list-name">工具推荐</span><span class="card-category-list-count">2</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/uncategorized/"><span class="card-category-list-name">uncategorized</span><span class="card-category-list-count">19</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/website-update/"><span class="card-category-list-name">website-update</span><span class="card-category-list-count">3</span></a></li>
-            <li class="card-category-list-item more is-center"><a class="card-category-list-link-more" href="/categories/">
-                <span>查看更多</span><i class="fas fa-angle-right"></i></a></li>
-            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/API/" style="font-size: 1.1em; color: #999">API</a> <a href="/tags/LoveLive/" style="font-size: 1.1em; color: #999">LoveLive!</a> <a href="/tags/WordPress/" style="font-size: 1.4em; color: #99a5b6">WordPress</a> <a href="/tags/%E4%B8%AD%E5%A5%96/" style="font-size: 1.1em; color: #999">中奖</a> <a href="/tags/%E4%B8%BB%E9%A1%B5/" style="font-size: 1.2em; color: #999da3">主页</a> <a href="/tags/%E4%B8%BB%E9%A2%98/" style="font-size: 1.2em; color: #999da3">主题</a> <a href="/tags/%E5%85%AC%E5%91%8A/" style="font-size: 1.1em; color: #999">公告</a> <a href="/tags/%E5%8E%9F%E5%88%9B/" style="font-size: 1.2em; color: #999da3">原创</a> <a href="/tags/%E5%8F%88%E6%8B%8D%E4%BA%91/" style="font-size: 1.1em; color: #999">又拍云</a> <a href="/tags/%E5%A4%87%E6%A1%88/" style="font-size: 1.1em; color: #999">备案</a> <a href="/tags/%E5%A4%A7%E9%9B%AA/" style="font-size: 1.1em; color: #999">大雪</a> <a href="/tags/%E5%AE%9D%E5%A1%94/" style="font-size: 1.1em; color: #999">宝塔</a> <a href="/tags/%E5%B7%B2%E8%BF%87%E6%9C%9F/" style="font-size: 1.2em; color: #999da3">已过期</a> <a href="/tags/%E5%BC%80%E7%AE%B1/" style="font-size: 1.1em; color: #999">开箱</a> <a href="/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/" style="font-size: 1.2em; color: #999da3">我的世界</a> <a href="/tags/%E6%8F%92%E4%BB%B6/" style="font-size: 1.3em; color: #99a1ac">插件</a> <a href="/tags/%E6%B5%81%E7%A8%8B/" style="font-size: 1.1em; color: #999">流程</a> <a href="/tags/%E7%BD%91%E6%98%93%E4%BA%91/" style="font-size: 1.1em; color: #999">网易云</a> <a href="/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/" style="font-size: 1.5em; color: #99a9bf">网站建设</a> <a href="/tags/%E8%BD%AC%E8%BD%BD/" style="font-size: 1.1em; color: #999">转载</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/09/"><span class="card-archive-list-date">九月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/12/"><span class="card-archive-list-date">十二月 2020</span><span class="card-archive-list-count">8</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/11/"><span class="card-archive-list-date">十一月 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/09/"><span class="card-archive-list-date">九月 2020</span><span class="card-archive-list-count">7</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/08/"><span class="card-archive-list-date">八月 2020</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/07/"><span class="card-archive-list-date">七月 2020</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/06/"><span class="card-archive-list-date">六月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item more is-center"><a class="card-archive-list-link-more" href="/archives/">
-              <span>查看更多</span><i class="fas fa-angle-right"  ></i></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">46</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-11-10T10:05:54.771Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By 随意之光</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">随意之光博客</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div class="aplayer no-destroy" data-id="5225821464" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div><script> var meting_api='https://api.suiyil.cn/meting-api-s/index.php?server=:server&type=:type&id=:id'; </script><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/API/" style="font-size: 1.1em; color: #999">API</a> <a href="/tags/LoveLive/" style="font-size: 1.1em; color: #999">LoveLive!</a> <a href="/tags/WordPress/" style="font-size: 1.4em; color: #99a5b6">WordPress</a> <a href="/tags/%E4%B8%AD%E5%A5%96/" style="font-size: 1.1em; color: #999">中奖</a> <a href="/tags/%E4%B8%BB%E9%A1%B5/" style="font-size: 1.2em; color: #999da3">主页</a> <a href="/tags/%E4%B8%BB%E9%A2%98/" style="font-size: 1.2em; color: #999da3">主题</a> <a href="/tags/%E5%85%AC%E5%91%8A/" style="font-size: 1.1em; color: #999">公告</a> <a href="/tags/%E5%8E%9F%E5%88%9B/" style="font-size: 1.2em; color: #999da3">原创</a> <a href="/tags/%E5%8F%88%E6%8B%8D%E4%BA%91/" style="font-size: 1.1em; color: #999">又拍云</a> <a href="/tags/%E5%A4%87%E6%A1%88/" style="font-size: 1.1em; color: #999">备案</a> <a href="/tags/%E5%A4%A7%E9%9B%AA/" style="font-size: 1.1em; color: #999">大雪</a> <a href="/tags/%E5%AE%9D%E5%A1%94/" style="font-size: 1.1em; color: #999">宝塔</a> <a href="/tags/%E5%B7%B2%E8%BF%87%E6%9C%9F/" style="font-size: 1.2em; color: #999da3">已过期</a> <a href="/tags/%E5%BC%80%E7%AE%B1/" style="font-size: 1.1em; color: #999">开箱</a> <a href="/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/" style="font-size: 1.2em; color: #999da3">我的世界</a> <a href="/tags/%E6%8F%92%E4%BB%B6/" style="font-size: 1.3em; color: #99a1ac">插件</a> <a href="/tags/%E6%B5%81%E7%A8%8B/" style="font-size: 1.1em; color: #999">流程</a> <a href="/tags/%E7%BD%91%E6%98%93%E4%BA%91/" style="font-size: 1.1em; color: #999">网易云</a> <a href="/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/" style="font-size: 1.5em; color: #99a9bf">网站建设</a> <a href="/tags/%E8%BD%AC%E8%BD%BD/" style="font-size: 1.1em; color: #999">转载</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/09/"><span class="card-archive-list-date">九月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/12/"><span class="card-archive-list-date">十二月 2020</span><span class="card-archive-list-count">8</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/11/"><span class="card-archive-list-date">十一月 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/09/"><span class="card-archive-list-date">九月 2020</span><span class="card-archive-list-count">7</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/08/"><span class="card-archive-list-date">八月 2020</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/07/"><span class="card-archive-list-date">七月 2020</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/06/"><span class="card-archive-list-date">六月 2020</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">46</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-11-14T04:13:46.695Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By 随意之光</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">随意之光博客</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><div class="aplayer no-destroy" data-id="5225821464" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div><script> var meting_api='https://api.suiyil.cn/meting-api-s/index.php?server=:server&type=:type&id=:id'; </script><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
   'title',
-  '#config_change',
+  '#config-diff',
   '#body-wrap',
   '#rightside-config-hide',
   '#rightside-config-show',
@@ -227,41 +211,12 @@ var pjax = new Pjax({
   scrollRestoration: false
 })
 
-document.addEventListener('pjax:complete', function () {
-  window.refreshFn()
-
-  document.querySelectorAll('script[data-pjax]').forEach(item => {
-    const newScript = document.createElement('script')
-    const content = item.text || item.textContent || item.innerHTML || ""
-    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
-    newScript.appendChild(document.createTextNode(content))
-    item.parentNode.replaceChild(newScript, item)
-  })
-
-  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
-
-  typeof chatBtnFn === 'function' && chatBtnFn()
-  typeof panguInit === 'function' && panguInit()
-
-  if (typeof gtag === 'function') {
-    gtag('config', '', {'page_path': window.location.pathname});
-  }
-
-  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
-
-  // Analytics
-  if (false) {
-    MtaH5.pgv()
-  }
-
-  // prismjs
-  typeof Prism === 'object' && Prism.highlightAll()
-
-  typeof preloader === 'object' && preloader.endLoading()
-})
-
-
 document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.removeEventListener('scroll', window.tocScrollFn)
+  window.removeEventListener('scroll', scrollCollect)
+
   typeof preloader === 'object' && preloader.initLoading()
   
   if (window.aplayers) {
@@ -278,4 +233,45 @@ document.addEventListener('pjax:send', function () {
   const $bodyClassList = document.body.classList
   $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
 
-})</script></div></body></html>
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
